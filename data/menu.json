@@ -1,0 +1,62 @@
+[
+  {
+    "id": "st-1",
+    "name": "Bruschetta",
+    "price": 6.5,
+    "description": "Toasted bread, tomatoes, basil, olive oil.",
+    "category": "Starters",
+    "image": "",
+    "available": true,
+    "tags": ["vegetarian"],
+    "veg": true,
+    "spicy": 0
+  },
+  {
+    "id": "st-2",
+    "name": "Greek Salad",
+    "price": 8,
+    "description": "Tomatoes, cucumber, feta, olives, oregano.",
+    "category": "Starters",
+    "image": "",
+    "available": true,
+    "tags": ["gluten-free"],
+    "veg": true,
+    "spicy": 0
+  },
+  {
+    "id": "mn-1",
+    "name": "Lemon Chicken",
+    "price": 14,
+    "description": "Grilled chicken with lemon-herb sauce.",
+    "category": "Mains",
+    "image": "",
+    "available": true,
+    "tags": [],
+    "veg": false,
+    "spicy": 0
+  },
+  {
+    "id": "mn-2",
+    "name": "Mushroom Risotto",
+    "price": "MP",
+    "description": "Arborio rice, mushrooms, parmesan.",
+    "category": "Mains",
+    "image": "",
+    "available": false,
+    "tags": ["vegetarian"],
+    "veg": true,
+    "spicy": 0
+  },
+  {
+    "id": "dr-1",
+    "name": "Iced Tea",
+    "price": 3,
+    "description": "House-brewed, lightly sweet.",
+    "category": "Drinks",
+    "image": "",
+    "available": true,
+    "tags": [],
+    "veg": true,
+    "spicy": 0
+  }
+]

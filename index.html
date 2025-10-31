@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>QR Menu</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header" role="banner">
+  <div class="container">
+    <div class="brand">
+      <img class="logo" src="assets/images/logo.png" alt="Riviera Bistro logo" onerror="this.style.display='none'">
+      <div>
+        <h1 class="site-title">Riviera Bistro</h1>
+        <p class="tagline">Fresh · Seasonal · Handmade</p>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main class="container" role="main" aria-label="Restaurant menu">
+    <section class="menu-controls">
+        <label for="search" class="visually-hidden">Search dishes</label>
+        <input id="search" type="search" placeholder="Search dishes..." aria-label="Search menu">
+        <div id="categories" class="chip-row" aria-label="Categories"></div>
+    </section>
+
+    <div id="menu-status" aria-live="polite" style="margin:8px 0; color: var(--muted);"></div>
+    <section id="menu" class="menu-grid" aria-live="polite">
+      <!-- Items will be injected by app.js -->
+    </section>
+
+    <section class="qr-section">
+        <h2>Scan to view this menu</h2>
+        <div id="qrcode" class="qr-box"></div>
+        <div class="qr-actions" style="margin-top:10px; display:flex; gap:8px; justify-content:center;">
+            <button id="copy-link" class="chip" type="button">Copy link</button>
+            <button id="download-qr" class="chip" type="button">Download QR</button>
+        </div>
+  <p class="qr-hint">We’ll refresh this QR after deployment.</p>
+</section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <small>© <span id="year"></span> Riviera Bistro · All rights reserved</small>
+    </div>
+  </footer>
+
+  <noscript>
+    This site needs JavaScript to load the menu items.
+  </noscript>
+
+  <script src="libs/qrcode.min.js" defer></script>
+  <script src="app.js" defer></script>
+</body>
+</html>
