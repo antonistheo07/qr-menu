@@ -2,15 +2,13 @@
 const $ = (sel, el = document) => el.querySelector(sel);
 
 // --- QR helpers ---
+// --- QR helpers ---
+const PUBLIC_URL = 'https://https://antonistheo07.github.io/qr-menu/';
+
 function currentMenuURL() {
-  // While local, this returns your Live Server URL for index.html.
-  // After hosting, we’ll replace with your public URL for a stable QR.
-  const url = new URL(window.location.href);
-  // If you want to force the root index without query/hash:
-  url.hash = '';
-  url.search = '';
-  return url.toString();
+  return PUBLIC_URL;
 }
+
 
 let qrInstance = null;
 function renderQR(urlString) {
