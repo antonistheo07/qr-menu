@@ -3,7 +3,7 @@ const $ = (sel, el = document) => el.querySelector(sel);
 
 // --- QR helpers ---
 // --- QR helpers ---
-const PUBLIC_URL = 'https://https://antonistheo07.github.io/qr-menu/';
+const PUBLIC_URL = 'https://antonistheo07.github.io/qr-menu/';
 
 function currentMenuURL() {
   return PUBLIC_URL;
