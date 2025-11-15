@@ -4,24 +4,41 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>QR Menu</title>
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles/variables.css" />
+  <link rel="stylesheet" href="/styles/header.css" />
+  <link rel="stylesheet" href="/styles/base.css" />
+  <link rel="stylesheet" href="/styles/search.css" />
+  <link rel="stylesheet" href="/styles/categories.css" />
+  <link rel="stylesheet" href="/styles/menu-grid.css" />
+  <link rel="stylesheet" href="/styles/card.css" />
+  <link rel="stylesheet" href="/styles/qr-section.css" />
+  <link rel="stylesheet" href="/styles/footer.css" />
+  <link rel="stylesheet" href="/styles/utilities.css" />
 </head>
 <body>
   <header class="site-header" role="banner">
   <div class="container">
     <div class="brand">
-      <img class="logo" src="assets/images/logo.png" alt="Riviera Bistro logo" onerror="this.style.display='none'">
       <div>
-        <h1 class="site-title">Riviera Bistro</h1>
-        <p class="tagline">Fresh · Seasonal · Handmade</p>
+        <h1 class="site-title">EPITELOUS</h1>
       </div>
+      <a href="https://instagram.com/your_handle" target="_blank" rel="noopener noreferrer" class="instagram-link" aria-label="Follow us on Instagram">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+          <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+          <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+        </svg>
+      </a>
     </div>
+    
   </div>
 </header>
 
 <main class="container" role="main" aria-label="Restaurant menu">
     <section class="menu-controls">
-        <label for="search" class="visually-hidden">Search dishes</label>
         <input id="search" type="search" placeholder="Search dishes..." aria-label="Search menu">
         <div id="categories" class="chip-row" aria-label="Categories"></div>
     </section>

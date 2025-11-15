@@ -1,0 +1,71 @@
+/* Menu Index Component */
+.menu-index {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 20px;
+  margin-bottom: 24px;
+  display: none; /* Hidden by default, shown by JS when items > 9 */
+}
+
+.menu-index h2 {
+  margin: 0 0 16px;
+  font-size: 1.2rem;
+  color: var(--text);
+}
+
+.menu-index-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+}
+
+@media (min-width: 640px) {
+  .menu-index-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .menu-index-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.menu-index-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 14px;
+  background: var(--chip);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.08s ease, border-color 0.15s ease;
+  text-decoration: none;
+  color: var(--text);
+}
+
+.menu-index-item:hover {
+  transform: translateY(-1px);
+  border-color: var(--accent);
+}
+
+.menu-index-item .category-name {
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.menu-index-item .item-count {
+  background: var(--bg);
+  color: var(--muted);
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+/* Show index when active */
+.menu-index.show {
+  display: block;
+}

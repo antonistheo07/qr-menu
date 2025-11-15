@@ -1,0 +1,19 @@
+/* CSS Custom Properties (Design Tokens) */
+:root {
+  /* Colors */
+  --bg: #F6F2E3;
+  --card: #fcfbf7;
+  --text: #1E1E1E;
+  --muted: #a9afbb;
+  --accent: #a9afbb;
+  --chip: #1e222a;
+  --border: #EA5F47;
+  
+  /* Spacing & Sizing */
+  --radius: 14px;
+  --container-max-width: 1024px;
+  --container-padding: 16px;
+  
+  /* Typography */
+  --font-primary: "Bagel Fat One", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+}

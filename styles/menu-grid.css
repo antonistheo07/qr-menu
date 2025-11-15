@@ -1,0 +1,35 @@
+/* Menu Grid Layout */
+.menu-grid {
+  display: grid;
+  gap: 14px;
+  grid-template-columns: 1fr;
+}
+
+/* Mobile: 1 column */
+@media (min-width: 640px) {
+  .menu-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Tablet: 2 columns */
+@media (min-width: 768px) {
+  .menu-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+}
+
+/* Desktop: 3 columns (3x4 layout) */
+@media (min-width: 1024px) {
+  .menu-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+  }
+}
+
+/* Menu status message */
+#menu-status {
+  margin: 8px 0;
+  color: var(--muted);
+}

@@ -199,6 +199,8 @@ async function loadMenu() {
   }
 }
 
+
+
 // Small debounce so typing in search feels smoother
 function debounce(fn, ms = 200) {
   return (...args) => {

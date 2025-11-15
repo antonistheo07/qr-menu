@@ -1,0 +1,26 @@
+/* Footer Component */
+.site-footer {
+  border-top: 1px solid var(--border);
+  margin-top: 40px;
+  color: var(--muted);
+  padding: 20px 0;
+}
+
+.site-footer small {
+  font-size: 0.9rem;
+  display: block;
+}
+
+/* Responsive adjustments */
+@media (min-width: 640px) {
+  .site-footer {
+    margin-top: 56px;
+    padding: 24px 0;
+  }
+}
+
+@media (min-width: 1024px) {
+  .site-footer {
+    margin-top: 64px;
+  }
+}

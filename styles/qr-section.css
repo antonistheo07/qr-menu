@@ -1,0 +1,49 @@
+/* QR Section Component */
+.qr-section {
+  margin-top: 32px;
+  text-align: center;
+}
+
+.qr-section h2 {
+  margin: 0 0 16px;
+  font-size: clamp(1.1rem, 1vw + 0.9rem, 1.4rem);
+}
+
+.qr-box {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 180px;
+  height: 180px;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  background: var(--card);
+  margin: 8px auto 0;
+}
+
+.qr-hint {
+  color: var(--muted);
+  font-size: 0.9rem;
+  margin-top: 12px;
+}
+
+/* QR actions already styled in categories.css via .chip class */
+.qr-actions {
+  margin-top: 10px;
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Responsive adjustments */
+@media (min-width: 640px) {
+  .qr-section {
+    margin-top: 48px;
+  }
+  
+  .qr-box {
+    width: 200px;
+    height: 200px;
+  }
+}
