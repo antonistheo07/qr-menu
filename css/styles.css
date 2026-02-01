@@ -10,12 +10,12 @@ body {
 body {
   margin: 0;
   overflow: hidden;
-  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-family: "ComicSansCustom", cursive, sans-serif;
   background: #000;
 }
 
 @font-face{
-  font-family:"Comic Sans MS";
+  font-family:"ComicSansCustom";
   src:url("/fonts/ComicSansMS.woff2") format("woff2"),
       url("/fonts/ComicSansMS.woff") format("woff");
   font-weight:400;
@@ -23,15 +23,33 @@ body {
   font-display:swap;
 }
 
+@font-face{
+  font-family:"ComicSansCustom";
+  src:url("/fonts/ComicSansMS-Italic.woff2") format("woff2"),
+      url("/fonts/ComicSansMS-Italic.woff") format("woff");
+  font-weight:400;
+  font-style:italic;
+  font-display:swap;
+}
 
 @font-face{
-  font-family:"Comic Sans MS";
+  font-family:"ComicSansCustom";
   src:url("/fonts/ComicSansMS-Bold.woff2") format("woff2"),
       url("/fonts/ComicSansMS-Bold.woff") format("woff");
   font-weight:700;
   font-style:normal;
   font-display:swap;
 }
+
+@font-face{
+  font-family:"ComicSansCustom";
+  src:url("/fonts/ComicSansMS-BoldItalic.woff2") format("woff2"),
+      url("/fonts/ComicSansMS-BoldItalic.woff") format("woff");
+  font-weight:700;
+  font-style:italic;
+  font-display:swap;
+}
+
 
 .content {
   position: relative;
