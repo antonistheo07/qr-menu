@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QR Generator</title>
+    <style>
+      body { margin: 0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial; background: #0b0b12; color: #fff; }
+      .wrap { max-width: 520px; margin: 0 auto; padding: 18px; }
+      .card { background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.12); border-radius: 16px; padding: 16px; }
+      label { display: block; font-size: 0.9rem; opacity: 0.9; margin-bottom: 6px; }
+      input { width: 100%; padding: 12px; border-radius: 12px; border: 1px solid rgba(255,255,255,0.18); background: rgba(0,0,0,0.25); color: #fff; }
+      .row { display: flex; gap: 10px; margin-top: 12px; flex-wrap: wrap; }
+      button { padding: 10px 12px; border-radius: 999px; border: 0; cursor: pointer; background: #fff; color: #111; font-weight: 600; }
+      #qrcode { margin-top: 14px; display: grid; place-items: center; padding: 14px; background: #fff; border-radius: 14px; width: fit-content; }
+      .hint { font-size: 0.9rem; opacity: 0.85; margin-top: 10px; line-height: 1.4; }
+      a { color: #fff; }
+    </style>
+  </head>
+
+  <body>
+    <div class="wrap">
+      <h1 style="margin: 10px 0 12px;">QR Code Generator</h1>
+
+      <div class="card">
+        <label for="url">Your live menu URL</label>
+        <input id="url" placeholder="https://antonistheo07.github.io/qr-menu/" />
+
+        <div class="row">
+          <button id="make">Generate QR</button>
+          <button id="download">Download PNG</button>
+        </div>
+
+        <div class="hint">
+          Tip: Deploy first, then paste the final URL here.  
+          This page is just for you (you don’t need customers to open it).
+        </div>
+
+        <div id="qrcode" aria-label="QR code output"></div>
+      </div>
+    </div>
+
+    <!-- QRCode.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    <script src="qr.js"></script>
+  </body>
+</html>
